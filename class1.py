@@ -632,7 +632,7 @@ st.subheader("Convert your ingredients easily! Just type in what you're using, h
 
 # First selection box to define your ingredient
 # ingr = st.selectbox('What ingredient are you using?', df.index)
-ingr = st.text_input('What ingredient are you using?', value = 'All Purpose Flour')
+ingr = st.selectbox('What ingredient are you using?')
 ingr = ingr.lower()
 # Second input to define how much you have
 amount = st.number_input('How much do you have?')
